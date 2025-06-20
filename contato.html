@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartilha de Seguranca da Informação</title>
+  <link rel="stylesheet" href="css/contato.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="/script/script.js"></script>
+</head>
+<body>
+  <nav>
+    <header>
+      <div class="accessibility-controls">
+          <img id="dark" onclick="addDarkTheme()" src="img/darkTheme.svg"/>
+          <img id="light" onclick="removeDarkTheme()" src="img/lightTheme.svg"/>
+      </div>    
+      </div>
+      <section class="container-pai">
+        <div class="container-filho1">
+          <h1>Proteja seus dados no mundo digital</h1>
+        </div>
+        <div class="container-filho2">
+          <h3>Aprenda sobre segurança da informação e como se proteger contra ameaças cibernéticas</h3>
+        </div>
+        <div class="container-filho3">
+          <h6 class="menu">  <!--colocar uma fonte-->
+            <a href="index.html"> Home</a>
+            <a href="sobre.html"> Sobre</a>
+            <a href="contato.html"> Contato</a>
+          </h6>
+        </div> 
+      </section>                    
+    </header>
+  </nav> 
+  <div class="form-container">
+      <form>
+          <form action="/enviar" method="post">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <button type="submit">Enviar</button>
+          </form>
+      </form>
+  </div> 
+  <script src="/script/script.js"></script> 
+  <footer>
+    <div class="container-footer">
+      <p>&copy; 2025 - Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>

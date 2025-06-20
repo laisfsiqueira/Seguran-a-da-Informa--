@@ -1,0 +1,481 @@
+/* Main CSS file for the website */
+
+/* RESET GLOBAL - Remove margens e paddings padrão do navegador */
+* {
+  margin: 0;                    /* Remove margem padrão de todos elementos */
+  padding: 0;                   /* Remove padding padrão de todos elementos */
+  box-sizing: border-box;       /* Inclui padding e border no tamanho total do elemento */
+}
+
+/* CONFIGURAÇÃO GLOBAL DO BODY */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; /* Fonte principal com fallbacks */
+  line-height: 1.6;            /* Altura da linha para melhor legibilidade */
+  color: #2d3748;              /* Cor padrão do texto */
+  background-color: #e8e2eb;   /* Cor de fundo da página */
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;      /* Adiciona transição suave ao scroll */
+}
+
+/* CABEÇALHO PRINCIPAL */
+header {
+  box-shadow: #4b1396 0px 0px 10px 0px;  /* Sombra roxa no cabeçalho */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente de fundo */
+  padding: 0% 0;               /* Padding vertical zero */
+}
+
+/* TÍTULO DO CABEÇALHO */
+header h1 {
+  text-align: center;          /* Centraliza o texto */
+  text-decoration-color: white; /* Cor da decoração do texto */
+  color: thistle;              /* Cor do texto do título */
+  text-decoration-style: solid; /* Estilo sólido da decoração */
+  text-decoration-thickness: 2px; /* Espessura da decoração */
+  font-size: xxx-large;        /* Tamanho da fonte muito grande */
+  font-weight: bold;           /* Peso da fonte em negrito */
+  margin: 0;                   /* Remove margens */
+  padding: 0% 0;              /* Remove padding */
+  position: center;            /* Posicionamento central */
+}
+
+/* CONTAINER PRINCIPAL */
+.container-pai {
+  height: auto;                /* Altura automática baseada no conteúdo */
+}
+
+/* LINKS DO MENU */
+a {
+  padding-left: 20px;          /* Espaçamento interno à esquerda */
+  padding-right: 30px;         /* Espaçamento interno à direita */
+  color: white;                /* Cor do texto dos links */
+  text-decoration: none;       /* Remove sublinhado dos links */
+  font-family: "Bebas Neue", sans-serif; /* Fonte específica para links */
+  font-weight: bold;           /* Peso da fonte em negrito */
+  font-size: 20px;            /* Tamanho da fonte */
+  position: relative;          /* Posicionamento relativo */
+  line-height: 2.5;           /* Altura da linha */
+}
+
+/* EFEITO HOVER DOS LINKS */
+a:hover {
+  color: #cd9de0;             /* Cor ao passar o mouse sobre o link */
+}
+
+/* TÍTULO ESPECIAL H6 */
+h6 {
+  font-family: "Sofia", sans-serif; /* Fonte específica */
+  font-size: 30px;            /* Tamanho da fonte */
+  text-align: right;          /* Alinhamento à direita */
+  margin: 0;                  /* Remove margens */
+  padding: 0;                 /* Remove padding */
+}
+
+/* CONTAINER GERAL */
+.container {
+  margin: 30px;               /* Margem externa de 30px */
+}
+
+/* TÍTULOS PRINCIPAIS H2 */
+h2 {
+  font-size: 2.5rem;          /* Tamanho da fonte */
+  font-weight: 600;           /* Peso da fonte semi-bold */
+  margin-bottom: 30px;        /* Margem inferior */
+  text-align: center;         /* Centralização do texto */
+  color: #8b49e2;            /* Cor roxa do título */
+  position: relative;         /* Posicionamento relativo para pseudo-elemento */
+}
+
+/* LINHA DECORATIVA ABAIXO DO H2 */
+h2::after {
+  content: '';                /* Conteúdo vazio para criar elemento */
+  position: absolute;         /* Posicionamento absoluto */
+  bottom: -10px;             /* 10px abaixo do título */
+  left: 50%;                 /* Posiciona no centro horizontalmente */
+  transform: translateX(-50%); /* Centraliza perfeitamente */
+  width: 60px;               /* Largura da linha */
+  height: 3px;               /* Altura da linha */
+  background: linear-gradient(90deg, #667eea, #764ba2); /* Gradiente da linha */
+  border-radius: 2px;        /* Bordas arredondadas */
+}
+
+/* SUBTÍTULOS H3 */
+h3 {
+  font-size: 1.5rem;          /* Tamanho da fonte */
+  font-weight: 600;           /* Peso da fonte semi-bold */
+  margin-bottom: 15px;        /* Margem inferior */
+  color: #4b1396;            /* Cor roxa escura */
+  text-align: center;         /* Centralização do texto */
+}
+
+/* PARÁGRAFOS GERAIS */
+p {
+  font-size: 1.1rem;          /* Tamanho da fonte */
+  margin-bottom: 30px;        /* Margem inferior */
+  text-align: center;         /* Centralização do texto */
+  max-width: 800px;          /* Largura máxima */
+  margin-left: auto;          /* Centraliza horizontalmente */
+  margin-right: auto;         /* Centraliza horizontalmente */
+  color: #4a5568;            /* Cor do texto */
+  font-weight: bold;          /* Peso da fonte em negrito */
+}
+
+/* SEÇÃO HERO */
+.hero {
+  background: linear-gradient(135deg, #bec5e6 0%, #ae8fce 100%); /* Gradiente de fundo */
+  color: #2d3748;            /* Cor do texto */
+  padding: 30px 0;           /* Padding vertical */
+  text-align: center;         /* Centralização do texto */
+  position: relative;         /* Posicionamento relativo */
+  overflow: hidden;           /* Esconde conteúdo que sai da área */
+}
+
+/* EFEITO DE TEXTURA NA SEÇÃO HERO */
+.hero::before {
+  content: '';                /* Conteúdo vazio */
+  position: absolute;         /* Posicionamento absoluto */
+  top: 0;                    /* Posição no topo */
+  left: 0;                   /* Posição à esquerda */
+  right: 0;                  /* Posição à direita */
+  bottom: 0;                 /* Posição na parte inferior */
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>'); /* Padrão SVG para textura */
+  pointer-events: none;       /* Não interfere em eventos do mouse */
+}
+
+/* TÍTULO DA SEÇÃO HERO */
+.hero h2 {
+  font-size: 3rem;           /* Tamanho grande da fonte */
+  font-weight: 700;          /* Peso da fonte bold */
+  margin-bottom: 20px;       /* Margem inferior */
+  position: relative;        /* Posicionamento relativo */
+  z-index: 1;               /* Fica acima do pseudo-elemento */
+}
+
+/* PARÁGRAFO DA SEÇÃO HERO */
+.hero p {
+  font-size: 1.25rem;        /* Tamanho da fonte */
+  opacity: 0.9;             /* Opacidade ligeiramente reduzida */
+  max-width: 600px;         /* Largura máxima */
+  margin: 0 auto;           /* Centralização horizontal */
+  position: relative;        /* Posicionamento relativo */
+  z-index: 1;               /* Fica acima do pseudo-elemento */
+}
+
+/* CONTAINER DA EQUIPE */
+.team-container {
+  max-width: 1200px;         /* Largura máxima */
+  margin: 0 auto;           /* Centralização horizontal */
+  padding: 80px 20px;       /* Padding interno */
+  display: grid;            /* Layout em grid */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Colunas responsivas */
+  gap: 40px;               /* Espaçamento entre itens */
+  align-items: center;      /* Alinhamento vertical */
+}
+
+/* CARTÃO DE MEMBRO DA EQUIPE */
+.team-member {
+  background: white;         /* Fundo branco */
+  padding: 40px 30px;       /* Padding interno */
+  border-radius: 20px;      /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  text-align: center;        /* Centralização do texto */
+  transition: all 0.3s ease; /* Transição suave para todas propriedades */
+  border: 1px solid #e2e8f0; /* Borda sutil */
+  position: relative;        /* Posicionamento relativo */
+  overflow: hidden;          /* Esconde overflow */
+  animation: fadeInUp 0.6s ease forwards; /* Animação de entrada */
+  box-shadow: #4b1396 0px 0px 10px 0px; 
+}
+
+/* LINHA DECORATIVA NO TOPO DO CARTÃO */
+.team-member::before {
+  content: '';               /* Conteúdo vazio */
+  position: absolute;        /* Posicionamento absoluto */
+  top: 0;                   /* No topo do cartão */
+  left: 0;                  /* À esquerda */
+  right: 0;                 /* À direita */
+  height: 4px;              /* Altura da linha */
+  background: linear-gradient(90deg, #667eea, #764ba2); /* Gradiente */
+  transform: scaleX(0);      /* Inicialmente invisível */
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* EFEITO HOVER DO CARTÃO */
+.team-member:hover {
+  transform: translateY(-8px); /* Move para cima */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+}
+
+/* APARECE A LINHA NO HOVER */
+.team-member:hover::before {
+  transform: scaleX(1);      /* Torna a linha visível */
+}
+
+/* CONTAINER DA FOTO */
+.photo {
+  width: 150px;             /* Largura da foto */
+  height: 150px;            /* Altura da foto */
+  margin: 0 auto 25px;      /* Centralização e margem inferior */
+  border-radius: 50%;       /* Formato circular */
+  overflow: hidden;         /* Esconde partes que saem do círculo */
+  position: relative;       /* Posicionamento relativo */
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Gradiente de fundo */
+  display: flex;            /* Layout flexível */
+  align-items: center;      /* Centralização vertical */
+  justify-content: center;  /* Centralização horizontal */
+  border: 4px solid #f7fafc; /* Borda branca */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* EFEITO DE BRILHO NA FOTO */
+.photo::before {
+  content: '';              /* Conteúdo vazio */
+  position: absolute;       /* Posicionamento absoluto */
+  top: 0;                  /* Topo */
+  left: 0;                 /* Esquerda */
+  right: 0;                /* Direita */
+  bottom: 0;               /* Fundo */
+  background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%); /* Gradiente de brilho */
+  transform: translateX(-100%); /* Inicialmente fora da tela */
+  transition: transform 0.6s ease; /* Transição suave */
+}
+
+/* ATIVA O EFEITO DE BRILHO NO HOVER */
+.team-member:hover .photo::before {
+  transform: translateX(100%); /* Move o brilho pela foto */
+}
+
+/* IMAGEM DENTRO DA FOTO */
+.photo img {
+  width: 100%;              /* Largura total */
+  height: 100%;             /* Altura total */
+  object-fit: cover;        /* Ajusta a imagem sem distorcer */
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* EFEITO DE ZOOM NA IMAGEM */
+.photo:hover img {
+  transform: scale(1.05);   /* Aumenta ligeiramente a imagem */
+}
+
+/* NOME DO MEMBRO DA EQUIPE */
+.team-member h3 {
+  font-size: 1.8rem;        /* Tamanho da fonte */
+  font-weight: 600;         /* Peso da fonte */
+  margin-bottom: 10px;      /* Margem inferior */
+  color: #2d3748;          /* Cor do texto */
+  position: relative;       /* Posicionamento relativo */
+}
+
+/* LINHA DECORATIVA ABAIXO DO NOME */
+.team-member h3::after {
+  content: '';              /* Conteúdo vazio */
+  position: absolute;       /* Posicionamento absoluto */
+  bottom: -5px;            /* Abaixo do nome */
+  left: 50%;               /* Centro horizontal */
+  transform: translateX(-50%); /* Centralização perfeita */
+  width: 40px;             /* Largura da linha */
+  height: 2px;             /* Altura da linha */
+  background: linear-gradient(90deg, #667eea, #764ba2); /* Gradiente */
+  border-radius: 1px;      /* Bordas arredondadas */
+}
+
+/* CARGO/FUNÇÃO DO MEMBRO */
+.team-member p:first-of-type {
+  font-size: 1.1rem;        /* Tamanho da fonte */
+  margin-bottom: 20px;      /* Margem inferior */
+  color: #667eea;          /* Cor azul */
+}
+
+/* NEGRITO NO CARGO */
+.team-member p:first-of-type strong {
+  font-weight: 600;         /* Peso da fonte semi-bold */
+}
+
+/* DESCRIÇÃO DO MEMBRO */
+.team-member p:last-of-type {
+  font-size: 1rem;          /* Tamanho da fonte */
+  line-height: 1.7;         /* Altura da linha */
+  color: #4a5568;          /* Cor do texto */
+  margin-bottom: 30px;      /* Margem inferior */
+  text-align: left;         /* Alinhamento à esquerda */
+}
+
+/* CONTAINER DOS LINKS SOCIAIS */
+.social-links {
+  display: flex;            /* Layout flexível */
+  justify-content: center;  /* Centralização horizontal */
+  gap: 15px;               /* Espaçamento entre links */
+  margin-top: 25px;        /* Margem superior */
+}
+
+/* LINKS SOCIAIS INDIVIDUAIS */
+.social-links a {
+  width: 45px;             /* Largura do botão */
+  height: 45px;            /* Altura do botão */
+  border-radius: 50%;      /* Formato circular */
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Gradiente de fundo */
+  color: white;            /* Cor do ícone */
+  display: flex;           /* Layout flexível */
+  align-items: center;     /* Centralização vertical */
+  justify-content: center; /* Centralização horizontal */
+  text-decoration: none;   /* Remove sublinhado */
+  transition: all 0.3s ease; /* Transição suave */
+  font-size: 18px;         /* Tamanho do ícone */
+  position: relative;      /* Posicionamento relativo */
+  overflow: hidden;        /* Esconde overflow */
+}
+
+/* EFEITO DE FUNDO NO HOVER DOS LINKS SOCIAIS */
+.social-links a::before {
+  content: '';             /* Conteúdo vazio */
+  position: absolute;      /* Posicionamento absoluto */
+  top: 0;                 /* Topo */
+  left: 0;                /* Esquerda */
+  right: 0;               /* Direita */
+  bottom: 0;              /* Fundo */
+  background: linear-gradient(135deg, #764ba2, #667eea); /* Gradiente invertido */
+  opacity: 0;             /* Inicialmente invisível */
+  transition: opacity 0.3s ease; /* Transição suave */
+}
+
+/* EFEITO HOVER DOS LINKS SOCIAIS */
+.social-links a:hover {
+  transform: translateY(-3px); /* Move para cima */
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4); /* Sombra colorida */
+}
+
+/* APARECE O FUNDO ALTERNATIVO NO HOVER */
+.social-links a:hover::before {
+  opacity: 1;              /* Torna visível */
+}
+
+/* ÍCONE FICA ACIMA DO FUNDO */
+.social-links a i {
+  position: relative;      /* Posicionamento relativo */
+  z-index: 1;             /* Fica acima do pseudo-elemento */
+}
+
+/* CLASSE PARA ÍCONES */
+.icon {
+  margin-top: 0;           /* Remove margem superior */
+  margin-left: 60px;       /* Margem à esquerda */
+  margin-right: 50px;      /* Margem à direita */
+  border-radius: 50%;      /* Formato circular */
+}
+
+/* CLASSE PARA TEXTOS JUSTIFICADOS */
+.texto {
+  height: auto;            /* Altura automática */
+  text-align: justify;     /* Justificação do texto */
+  text-align-last: justify; /* Força justificação da última linha */
+  text-justify: inter-word; /* Justificação entre palavras */
+  word-spacing: 0.1em;     /* Espaçamento entre palavras */
+  hyphens: auto;           /* Hifenização automática */
+  -webkit-hyphens: auto;   /* Hifenização para WebKit */
+  -moz-hyphens: auto;      /* Hifenização para Mozilla */
+  margin-top: 20px;        /* Margem superior */
+  margin-bottom: 15px;     /* Margem inferior */
+  padding: 15px;           /* Padding interno */
+  font-size: 1.1em;        /* Tamanho da fonte */
+  line-height: 1.6;        /* Altura da linha */
+  font-family: 'Arial', 'Helvetica', sans-serif; /* Família da fonte */
+  max-width: 800px;        /* Largura máxima */
+  color: #333;             /* Cor do texto */
+  border-radius: 8px;      /* Bordas arredondadas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  background-color: #fafafa; /* Cor de fundo */
+}
+
+/* SEÇÃO DA EQUIPE */
+.team-section {
+  margin-top: 50px;        /* Margem superior */
+  margin-block-end: 50px;  /* Margem inferior */
+  margin-left: 60px;       /* Margem à esquerda */
+  margin-right: 60px;      /* Margem à direita */
+}
+
+/* CONTAINER COM DISPLAY FLEX */
+.container2 {
+  display: flex;           /* Layout flexível */
+  gap: 80px;              /* Espaçamento entre itens */
+  margin-top: 50px;       /* Margem superior */
+}
+
+/* RODAPÉ */
+.container-footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente de fundo */
+  color: white;            /* Cor do texto */
+  display: flex;           /* Layout flexível */
+  align-items: center;     /* Centralização vertical */
+  justify-content: center; /* Centralização horizontal */
+  width: 100%;            /* Largura total */
+  height: 80px;           /* Altura fixa */
+  padding: 0;             /* Remove padding */
+  box-shadow: #4b1396 0px 0px 10px 0px; /* Sombra roxa */
+}
+
+/* RESPONSIVIDADE PARA TABLETS */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;        /* Reduz tamanho da fonte */
+  }
+
+  h3 {
+    font-size: 1.3rem;      /* Reduz tamanho da fonte */
+  }
+
+  p {
+    font-size: 1rem;        /* Reduz tamanho da fonte */
+  }
+
+  .info-cards-seguranca, .info-cards {
+    grid-template-columns: 1fr; /* Uma coluna apenas */
+    padding: 15px;          /* Reduz padding */
+  }
+
+  .card-seguranca, .card {
+    padding: 30px 20px;     /* Reduz padding */
+  }
+
+  .container-footer {
+    height: 60px;           /* Reduz altura do rodapé */
+  }
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;      /* Reduz ainda mais a fonte */
+  }
+
+  h3 {
+    font-size: 1.2rem;      /* Reduz ainda mais a fonte */
+  }
+
+  p {
+    font-size: 0.95rem;     /* Reduz ainda mais a fonte */
+  }
+
+  .container {
+    margin: 20px;           /* Reduz margem */
+  }
+
+  .card-seguranca, .card {
+    padding: 25px 15px;     /* Reduz padding */
+  }
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;             /* Começa invisível */
+    transform: translateY(30px); /* Começa 30px abaixo */
+  }
+  to {
+    opacity: 1;             /* Termina visível */
+    transform: translateY(0); /* Termina na posição original */
+  }
+}

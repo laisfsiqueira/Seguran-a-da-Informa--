@@ -1,0 +1,275 @@
+/* Main CSS file for the website */
+
+/* RESET GLOBAL - Remove margens e paddings padrão do navegador */
+* {
+  margin: 0;                    /* Remove margem padrão de todos elementos */
+  padding: 0;                   /* Remove padding padrão de todos elementos */
+  box-sizing: border-box;       /* Inclui padding e border no tamanho total do elemento */
+}
+
+/* CONFIGURAÇÃO GLOBAL DO BODY */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; /* Fonte principal com fallbacks */
+  line-height: 1.6;            /* Altura da linha para melhor legibilidade */
+  color: #2d3748;              /* Cor padrão do texto */
+  background-color: #e8e2eb;   /* Cor de fundo da página */
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;      /* Adiciona transição suave ao scroll */
+}
+
+/* CABEÇALHO PRINCIPAL */
+header {
+  box-shadow: #4b1396 0px 0px 10px 0px;  /* Sombra roxa no cabeçalho */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente de fundo */
+  padding: 0% 0;               /* Padding vertical zero */
+}
+
+/* TÍTULO DO CABEÇALHO */
+header h1 {
+  text-align: center;          /* Centraliza o texto */
+  text-decoration-color: white; /* Cor da decoração do texto */
+  color: thistle;              /* Cor do texto do título */
+  text-decoration-style: solid; /* Estilo sólido da decoração */
+  text-decoration-thickness: 2px; /* Espessura da decoração */
+  font-size: xxx-large;        /* Tamanho da fonte muito grande */
+  font-weight: bold;           /* Peso da fonte em negrito */
+  margin: 0;                   /* Remove margens */
+  padding: 0% 0;              /* Remove padding */
+  position: center;            /* Posicionamento central */
+}
+
+/* CONTAINER PRINCIPAL */
+.container-pai {
+  height: auto;                /* Altura automática baseada no conteúdo */
+}
+
+/* LINKS DO MENU */
+a {
+  padding-left: 20px;          /* Espaçamento interno à esquerda */
+  padding-right: 30px;         /* Espaçamento interno à direita */
+  color: white;                /* Cor do texto dos links */
+  text-decoration: none;       /* Remove sublinhado dos links */
+  font-family: "Bebas Neue", sans-serif; /* Fonte específica para links */
+  font-weight: bold;           /* Peso da fonte em negrito */
+  font-size: 20px;            /* Tamanho da fonte */
+  position: relative;          /* Posicionamento relativo */
+  line-height: 2.5;           /* Altura da linha */
+}
+
+/* EFEITO HOVER DOS LINKS */
+a:hover {
+  color: #cd9de0;             /* Cor ao passar o mouse sobre o link */
+}
+
+/* TÍTULO ESPECIAL H6 */
+h6 {
+  font-family: "Sofia", sans-serif; /* Fonte específica */
+  font-size: 30px;            /* Tamanho da fonte */
+  text-align: right;          /* Alinhamento à direita */
+  margin: 0;                  /* Remove margens */
+  padding: 0;                 /* Remove padding */
+}
+
+/* CONTAINER GERAL */
+.container {
+  margin: 30px;               /* Margem externa de 30px */
+}
+
+/* TÍTULOS PRINCIPAIS H2 */
+h2 {
+  font-size: 2.5rem;          /* Tamanho da fonte */
+  font-weight: 600;           /* Peso da fonte semi-bold */
+  margin-bottom: 30px;        /* Margem inferior */
+  text-align: center;         /* Centralização do texto */
+  color: #8b49e2;            /* Cor roxa do título */
+  position: relative;         /* Posicionamento relativo para pseudo-elemento */
+}
+
+/* LINHA DECORATIVA ABAIXO DO H2 */
+h2::after {
+  content: '';                /* Conteúdo vazio para criar elemento */
+  position: absolute;         /* Posicionamento absoluto */
+  bottom: -10px;             /* 10px abaixo do título */
+  left: 50%;                 /* Posiciona no centro horizontalmente */
+  transform: translateX(-50%); /* Centraliza perfeitamente */
+  width: 60px;               /* Largura da linha */
+  height: 3px;               /* Altura da linha */
+  background: linear-gradient(90deg, #667eea, #764ba2); /* Gradiente da linha */
+  border-radius: 2px;        /* Bordas arredondadas */
+}
+
+/* SUBTÍTULOS H3 */
+h3 {
+  font-size: 1.5rem;          /* Tamanho da fonte */
+  font-weight: 600;           /* Peso da fonte semi-bold */
+  margin-bottom: 15px;        /* Margem inferior */
+  color: #4b1396;            /* Cor roxa escura */
+  text-align: center;         /* Centralização do texto */
+}
+
+/* PARÁGRAFOS GERAIS */
+p {
+  font-size: 1.1rem;          /* Tamanho da fonte */
+  margin-bottom: 30px;        /* Margem inferior */
+  text-align: center;         /* Centralização do texto */
+  max-width: 800px;          /* Largura máxima */
+  margin-left: auto;          /* Centraliza horizontalmente */
+  margin-right: auto;         /* Centraliza horizontalmente */
+  color: #4a5568;            /* Cor do texto */
+  font-weight: bold;          /* Peso da fonte em negrito */
+}
+
+
+/* Formulario */
+.form-container {
+  color: rgba(0, 0, 0, 0.15); /* Cor do texto padrão */
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  flex-direction: column; /* Direção da coluna */
+  align-items: center; /* Alinha os itens no centro */
+  justify-content: top; /* Justifica o conteúdo no topo */
+  margin-top: 0px; /* Margem superior */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente de fundo */
+  color: white; /* Cor do texto */
+  padding: 10px 0; /* Preenchimento superior e inferior */
+  text-align: left; /*Alinha o texto à esquerda */
+  position: center; /* Centraliza o conteúdo */
+  width: 100%; /* Largura total */
+  height: 80vh; /* Altura do formulário */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidade */
+}
+
+label {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+form {
+  margin-top: 50px;
+  max-width: 450px;
+  padding: 20px;
+  color: white; /* Cor do texto padrão */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borda semi-transparente */
+  border-radius: 10px; /* Bordas arredondadas */
+  position: relative; /* Necessário para o efeito de sombra */
+  z-index: 1; /* Garante que o formulário fique acima de outros elementos */
+  box-shadow: #4b1396 0px 0px 10px 0px; 
+}
+
+input,
+textarea {
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.15);
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+button:hover { /* Efeito de hover no botão */
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Configuração do corpo da página */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.6;
+  color: #2d3748;
+  background-color: #e8e2eb;
+}
+
+.container {
+  margin: 30px;
+}
+
+/* Rodapé */
+.container-footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  padding: 0;
+}
+
+/* RESPONSIVIDADE PARA TABLETS */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;        /* Reduz tamanho da fonte */
+  }
+
+  h3 {
+    font-size: 1.3rem;      /* Reduz tamanho da fonte */
+  }
+
+  p {
+    font-size: 1rem;        /* Reduz tamanho da fonte */
+  }
+
+  .info-cards-seguranca, .info-cards {
+    grid-template-columns: 1fr; /* Uma coluna apenas */
+    padding: 15px;          /* Reduz padding */
+  }
+
+  .card-seguranca, .card {
+    padding: 30px 20px;     /* Reduz padding */
+  }
+
+  .container-footer {
+    height: 60px;           /* Reduz altura do rodapé */
+  }
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;      /* Reduz ainda mais a fonte */
+  }
+
+  h3 {
+    font-size: 1.2rem;      /* Reduz ainda mais a fonte */
+  }
+
+  p {
+    font-size: 0.95rem;     /* Reduz ainda mais a fonte */
+  }
+
+  .container {
+    margin: 20px;           /* Reduz margem */
+  }
+
+  .card-seguranca, .card {
+    padding: 25px 15px;     /* Reduz padding */
+  }
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;             /* Começa invisível */
+    transform: translateY(30px); /* Começa 30px abaixo */
+  }
+  to {
+    opacity: 1;             /* Termina visível */
+    transform: translateY(0); /* Termina na posição original */
+  }
+}
