@@ -31,7 +31,7 @@ header {
 header h1 {
   text-align: center;          /* Centraliza o texto */
   text-decoration-color: white; /* Cor da decoração do texto */
-  color: thistle;              /* Cor do texto do título */
+  color: white;              /* Cor do texto do título */
   text-decoration-style: solid; /* Estilo sólido da decoração */
   text-decoration-thickness: 2px; /* Espessura da decoração */
   font-size: xxx-large;        /* Tamanho da fonte muito grande */
@@ -148,7 +148,7 @@ label {
 }
 
 form {
-  margin-top: 50px;
+  margin-top: 40px;
   max-width: 450px;
   padding: 20px;
   color: white; /* Cor do texto padrão */
@@ -160,6 +160,7 @@ form {
   position: relative; /* Necessário para o efeito de sombra */
   z-index: 1; /* Garante que o formulário fique acima de outros elementos */
   box-shadow: #4b1396 0px 0px 10px 0px; 
+  background: linear-gradient(90deg, #667eea, #764ba2); /* Gradiente */
 }
 
 input,
@@ -181,6 +182,7 @@ button {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  font-weight: bold;
 }
 
 button:hover { /* Efeito de hover no botão */
@@ -209,6 +211,7 @@ body {
   width: 100%;
   height: 80px;
   padding: 0;
+  box-shadow: #4b1396 0px 0px 10px 0px; /* Sombra roxa */
 }
 
 /* RESPONSIVIDADE PARA TABLETS */

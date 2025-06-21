@@ -26,7 +26,7 @@ header {
 header h1 {
   text-align: center;          /* Centraliza o texto */
   text-decoration-color: white; /* Cor da decoração do texto */
-  color: thistle;              /* Cor do texto do título */
+  color: white;              /* Cor do texto do título */
   text-decoration-style: solid; /* Estilo sólido da decoração */
   text-decoration-thickness: 2px; /* Espessura da decoração */
   font-size: xxx-large;        /* Tamanho da fonte muito grande */
