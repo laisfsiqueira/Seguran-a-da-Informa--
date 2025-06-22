@@ -11,8 +11,8 @@
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; /* Fonte principal com fallbacks */
   line-height: 1.6;            /* Altura da linha para melhor legibilidade */
-  color: #2d3748;              /* Cor padrão do texto */
-  background-color: #e8e2eb;   /* Cor de fundo da página */
+  color: #2d3748;             /* Cor padrão do texto */
+  background-color: #ece8ee;   /* Cor de fundo da página */
 }
 
 /* CABEÇALHO PRINCIPAL */
