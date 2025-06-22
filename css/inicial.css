@@ -17,8 +17,8 @@ body {
 
 /* CABEÇALHO PRINCIPAL */
 header {
-  box-shadow: #4b1396 0px 0px 10px 0px;  /* Sombra roxa no cabeçalho */
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente de fundo */
+  box-shadow: #011C40 0px 0px 10px 0px;  /* Sombra no cabeçalho */
+  background: linear-gradient(135deg, #26658C 0%, #023859 100%); /* Gradiente de fundo */
   padding: 0% 0;               /* Padding vertical zero */
 }
 
@@ -41,6 +41,11 @@ header h1 {
   height: auto;                /* Altura automática baseada no conteúdo */
 }
 
+/* CONTAINER PRINCIPAL */
+.container-pai {
+  height: auto;                /* Altura automática baseada no conteúdo */
+}
+
 /* LINKS DO MENU */
 a {
   padding-left: 20px;          /* Espaçamento interno à esquerda */
@@ -56,7 +61,7 @@ a {
 
 /* EFEITO HOVER DOS LINKS */
 a:hover {
-  color: #cd9de0;             /* Cor ao passar o mouse sobre o link */
+  color: #54ACBF;             /* Cor ao passar o mouse sobre o link */
 }
 
 /* TÍTULO ESPECIAL H6 */
@@ -79,7 +84,7 @@ h2 {
   font-weight: 600;           /* Peso da fonte semi-bold */
   margin-bottom: 30px;        /* Margem inferior */
   text-align: center;         /* Centralização do texto */
-  color: #8b49e2;            /* Cor roxa do título */
+  color: #023859;             /* Cor do título */
   position: relative;         /* Posicionamento relativo para pseudo-elemento */
 }
 
@@ -92,7 +97,7 @@ h2::after {
   transform: translateX(-50%); /* Centraliza perfeitamente */
   width: 60px;               /* Largura da linha */
   height: 3px;               /* Altura da linha */
-  background: linear-gradient(90deg, #667eea, #764ba2); /* Gradiente da linha */
+  background: linear-gradient(90deg, #26658C 0%, #023859); /* Gradiente da linha */
   border-radius: 2px;        /* Bordas arredondadas */
 }
 
@@ -101,7 +106,7 @@ h3 {
   font-size: 1.5rem;          /* Tamanho da fonte */
   font-weight: 600;           /* Peso da fonte semi-bold */
   margin-bottom: 15px;        /* Margem inferior */
-  color: #4b1396;            /* Cor roxa escura */
+  color: #011C40;            /* Cor azul escuro */
   text-align: center;         /* Centralização do texto */
 }
 
@@ -129,15 +134,15 @@ p {
 
 /* ESTILO DOS CARDS */
 .card-seguranca, .card {
-  background: white;          /* Fundo branco */
+  background: white;       /* Fundo branco */
   padding: 40px 30px;        /* Padding interno */
   border-radius: 16px;       /* Bordas arredondadas */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  box-shadow: 0 4px 20px #011C40 (0, 0, 0, 0.08); /* Sombra suave */
   text-align: center;         /* Centralização do texto */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
   border: 1px solid #e2e8f0; /* Borda sutil */
   position: relative;         /* Posicionamento relativo */
-  box-shadow: #4b1396 0px 0px 10px 0px; /*sobra atrás dos cards */
+  box-shadow: #011C40 0px 0px 10px 0px; /*sobra atrás dos cards */
 }
 
 /* LINHA COLORIDA NO TOPO DO CARD */
@@ -148,7 +153,7 @@ p {
   left: 0;                  /* À esquerda */
   right: 0;                 /* À direita */
   height: 4px;              /* Altura da linha */
-  background: linear-gradient(90deg, #667eea, #764ba2); /* Gradiente da linha */
+  background: linear-gradient(90deg, #26658C 0%, #023859); /* Gradiente da linha */
   transform: scaleX(0);      /* Inicialmente invisível */
   transform-origin: left;    /* Origem da transformação à esquerda */
   transition: transform 0.3s ease; /* Transição suave */
@@ -189,7 +194,7 @@ ul {
 
 /* RODAPÉ */
 .container-footer {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente de fundo */
+  background: linear-gradient(135deg, #26658C 0%, #023859 100%); /* Gradiente de fundo */
   color: white;             /* Cor do texto */
   display: flex;            /* Layout flexível */
   align-items: center;      /* Centralização vertical */
@@ -197,7 +202,12 @@ ul {
   width: 100%;             /* Largura total */
   height: 80px;            /* Altura fixa */
   padding: 0;              /* Remove padding */
-  box-shadow: #4b1396 0px 0px 10px 0px; /* Sombra roxa */
+  box-shadow: #011C40  0px 0px 10px 0px; /* Sombra roxa */
+}
+
+.container-footer p {
+  color: white;
+  margin-top: 31px;  
 }
 
 /* RESPONSIVIDADE PARA TABLETS */
