@@ -9,7 +9,10 @@
 
 /* CONFIGURAÇÃO GLOBAL DO BODY */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; /* Fonte principal com fallbacks */
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+ /* Fonte principal com fallbacks */
   line-height: 1.6;            /* Altura da linha para melhor legibilidade */
   color: #2d3748;             /* Cor padrão do texto */
   background-color: #ece8ee;   /* Cor de fundo da página */
@@ -17,7 +20,7 @@ body {
 
 /* CABEÇALHO PRINCIPAL */
 header {
-  box-shadow: #011C40 0px 0px 10px 0px;  /* Sombra no cabeçalho */
+  box-shadow: #011C40 0px 0px 50px 0px;  /* Sombra no cabeçalho */
   background: linear-gradient(135deg, #26658C 0%, #023859 100%); /* Gradiente de fundo */
   padding: 0% 0;               /* Padding vertical zero */
 }
@@ -52,8 +55,9 @@ a {
   padding-right: 30px;         /* Espaçamento interno à direita */
   color: white;                /* Cor do texto dos links */
   text-decoration: none;       /* Remove sublinhado dos links */
-  font-family: "Bebas Neue", sans-serif; /* Fonte específica para links */
-  font-weight: bold;           /* Peso da fonte em negrito */
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 20px;            /* Tamanho da fonte */
   position: relative;          /* Posicionamento relativo */
   line-height: 2.5;           /* Altura da linha */
@@ -61,7 +65,7 @@ a {
 
 /* EFEITO HOVER DOS LINKS */
 a:hover {
-  color: #54ACBF;             /* Cor ao passar o mouse sobre o link */
+  color: #26658C;             /* Cor ao passar o mouse sobre o link */
 }
 
 /* TÍTULO ESPECIAL H6 */
@@ -124,7 +128,7 @@ p {
 
 /* SEÇÃO HERO */
 .hero {
-  background: linear-gradient(135deg,  #26658C 0%, #023859 100%); /* Gradiente de fundo */
+  background: linear-gradient(135deg,  #26658C 25%, #023859 100%); /* Gradiente de fundo */
   color: #2d3748;            /* Cor do texto */
   padding: 30px 0;           /* Padding vertical */
   text-align: center;         /* Centralização do texto */
@@ -428,6 +432,7 @@ p {
   margin-top: 31px;  
 }
 
+
 /* RESPONSIVIDADE PARA TABLETS */
 @media (max-width: 768px) {
   h2 {
@@ -489,4 +494,32 @@ p {
     opacity: 1;             /* Termina visível */
     transform: translateY(0); /* Termina na posição original */
   }
+}
+.oxygen-regular {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Theme */
+
+.dark  {
+    background-color: #13111F;
+    h3{color: white};
+    .team-member{background-color: #13111F};
+    .team-member:hover {
+  transform: translateY(-8px); /* Move para cima */
+  box-shadow: 0 12px 40px #023859; /* Sombra mais intensa */
+}
+
+ 
+}
+
+.white {
+ 
+    color: black;
+}
+
+.tamanho, #info{
+  p{font-size: 25px;}
+
 }

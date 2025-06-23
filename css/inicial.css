@@ -1,3 +1,5 @@
+/* Main CSS file for the website */
+
 /* RESET GLOBAL - Remove margens e paddings padrão do navegador */
 * {
   margin: 0;                    /* Remove margem padrão de todos elementos */
@@ -7,7 +9,9 @@
 
 /* CONFIGURAÇÃO GLOBAL DO BODY */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; /* Fonte principal com fallbacks */
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   line-height: 1.6;            /* Altura da linha para melhor legibilidade */
   color: #2d3748;             /* Cor padrão do texto */
   background-color: #ece8ee;   /* Cor de fundo da página */
@@ -50,8 +54,9 @@ a {
   padding-right: 30px;         /* Espaçamento interno à direita */
   color: white;                /* Cor do texto dos links */
   text-decoration: none;       /* Remove sublinhado dos links */
-  font-family: "Bebas Neue", sans-serif; /* Fonte específica para links */
-  font-weight: bold;           /* Peso da fonte em negrito */
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;  
   font-size: 20px;            /* Tamanho da fonte */
   position: relative;          /* Posicionamento relativo */
   line-height: 2.5;           /* Altura da linha */
@@ -59,7 +64,7 @@ a {
 
 /* EFEITO HOVER DOS LINKS */
 a:hover {
-  color: #54ACBF;             /* Cor ao passar o mouse sobre o link */
+  color: #26658C;             /* Cor ao passar o mouse sobre o link */
 }
 
 /* TÍTULO ESPECIAL H6 */
@@ -132,29 +137,31 @@ p {
 
 /* ESTILO DOS CARDS */
 .card-seguranca, .card {
-  background: white;       /* Fundo branco */
-  padding: 40px 30px;        /* Padding interno */
-  border-radius: 16px;       /* Bordas arredondadas */
-  box-shadow: 0 4px 20px #011C40 (0, 0, 0, 0.08); /* Sombra suave */
-  text-align: center;         /* Centralização do texto */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  background: white;         /* Fundo branco */
+  padding: 40px 30px;       /* Padding interno */
+  border-radius: 20px;      /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  text-align: center;        /* Centralização do texto */
+  transition: all 0.3s ease; /* Transição suave para todas propriedades */
   border: 1px solid #e2e8f0; /* Borda sutil */
-  position: relative;         /* Posicionamento relativo */
-  box-shadow: #011C40 0px 0px 10px 0px; /*sobra atrás dos cards */
+  position: relative;        /* Posicionamento relativo */
+  overflow: hidden;          /* Esconde overflow */
+  animation: fadeInUp 0.6s ease forwards; /* Animação de entrada */
+  box-shadow: #023859 0px 0px 10px 0px; 
 }
 
 /* LINHA COLORIDA NO TOPO DO CARD */
 .card-seguranca::before, .card::before {
   content: '';               /* Conteúdo vazio */
   position: absolute;        /* Posicionamento absoluto */
-  top: 0;                   /* No topo do card */
+  top: 0;                   /* No topo do cartão */
   left: 0;                  /* À esquerda */
   right: 0;                 /* À direita */
   height: 4px;              /* Altura da linha */
-  background: linear-gradient(90deg, #26658C 0%, #023859); /* Gradiente da linha */
+  background: linear-gradient(90deg, #26658C #023859); /* Gradiente */
   transform: scaleX(0);      /* Inicialmente invisível */
-  transform-origin: left;    /* Origem da transformação à esquerda */
   transition: transform 0.3s ease; /* Transição suave */
+  background-color: #023859;
 }
 
 /* EFEITO HOVER DOS CARDS */
@@ -257,4 +264,30 @@ ul {
   .card-seguranca, .card {
     padding: 25px 15px;      /* Reduz padding dos cards */
   }
+}
+
+/* Theme */
+
+.dark {
+    background-color: #13111F;
+    color: #13111F;
+    .card, .card-seguranca{background-color: #13111F;}
+    h3, h2{color: #54ACBF;}
+    li{color: white;}
+    .card-seguranca:hover, .card:hover {
+    transform: translateY(-8px); /* Move para cima */
+    box-shadow: 0 12px 40px #023859; /* Sombra mais intensa */}
+    #rodapé{color: #011C40;}
+    
+    
+}
+
+.white {
+   
+    color: black;
+}
+
+.tamanho{
+  font-size: 33px;
+  .rodapé, p{font-size: 28px;}
 }

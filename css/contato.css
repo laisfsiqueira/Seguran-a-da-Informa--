@@ -8,12 +8,16 @@
 }
 
 /* CONFIGURAÇÃO GLOBAL DO BODY */
+/* CONFIGURAÇÃO GLOBAL DO BODY */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; /* Fonte principal com fallbacks */
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   line-height: 1.6;            /* Altura da linha para melhor legibilidade */
   color: #2d3748;             /* Cor padrão do texto */
   background-color: #ece8ee;   /* Cor de fundo da página */
 }
+
 
 /* CABEÇALHO PRINCIPAL */
 header {
@@ -22,6 +26,7 @@ header {
   padding: 0% 0;               /* Padding vertical zero */
 }
 
+/* TÍTULO DO CABEÇALHO */
 /* TÍTULO DO CABEÇALHO */
 header h1 {
   text-align: center;          /* Centraliza o texto */
@@ -35,7 +40,6 @@ header h1 {
   padding: 0% 0;              /* Remove padding */
   position: center;            /* Posicionamento central */
 }
-
 /* CONTAINER PRINCIPAL */
 .container-pai {
   height: auto;                /* Altura automática baseada no conteúdo */
@@ -52,8 +56,9 @@ a {
   padding-right: 30px;         /* Espaçamento interno à direita */
   color: white;                /* Cor do texto dos links */
   text-decoration: none;       /* Remove sublinhado dos links */
-  font-family: "Bebas Neue", sans-serif; /* Fonte específica para links */
-  font-weight: bold;           /* Peso da fonte em negrito */
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;  
   font-size: 20px;            /* Tamanho da fonte */
   position: relative;          /* Posicionamento relativo */
   line-height: 2.5;           /* Altura da linha */
@@ -61,13 +66,13 @@ a {
 
 /* EFEITO HOVER DOS LINKS */
 a:hover {
-  color: #54ACBF;             /* Cor ao passar o mouse sobre o link */
+  color: #26658C;             /* Cor ao passar o mouse sobre o link */
 }
 
 /* TÍTULO ESPECIAL H6 */
 h6 {
-  font-family: "Sofia", sans-serif; /* Fonte específica */
-  font-size: 30px;            /* Tamanho da fonte */
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
   text-align: right;          /* Alinhamento à direita */
   margin: 0;                  /* Remove margens */
   padding: 0;                 /* Remove padding */
@@ -189,12 +194,6 @@ button:hover { /* Efeito de hover no botão */
 }
 
 /* Configuração do corpo da página */
-body {
-  font-family: 'Inter', Arial, sans-serif;
-  line-height: 1.6;
-  color: #2d3748;
-  background-color: #e8e2eb;
-}
 
 .container {
   margin: 30px;
@@ -279,4 +278,20 @@ body {
     opacity: 1;             /* Termina visível */
     transform: translateY(0); /* Termina na posição original */
   }
+}
+.dark {
+    background-color: #13111F;
+    color: #13111F;
+    
+    
+    
+}
+
+.white {
+   
+    color: black;
+}
+
+.tamanho{
+    font-size: 28px;
 }

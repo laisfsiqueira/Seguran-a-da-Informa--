@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <script src="javascript/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -16,20 +18,21 @@
       <div class="accessibility-controls">
           <img id="dark" onclick="addDarkTheme()" src="img/darkTheme.svg"/>
           <img id="light" onclick="removeDarkTheme()" src="img/lightTheme.svg"/>
+          <img id="tamanho" onclick="addSize()" src="img/text_increase_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 (1).svg">
       </div>    
       </div>
       <section class="container-pai">
         <div class="container-filho1">
-          <h1>Proteja seus dados no mundo digital</h1>
+          <h1>PROTEJA SEUS DADOS NO MUNDO</h1>
         </div>
         <div class="container-filho2">
           <h3>Aprenda sobre segurança da informação e como se proteger contra ameaças cibernéticas</h3>
         </div>
         <div class="container-filho3">
           <h6 class="menu">  <!--colocar uma fonte-->
-            <a href="index.html"> Home</a>
-            <a href="sobre.html"> Sobre</a>
-            <a href="contato.html"> Contato</a>
+            <a href="index.html">HOME</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="contato.html">CONTATO</a>
           </h6>
         </div> 
       </section>                    
@@ -38,7 +41,7 @@
   <main>
     <section class="hero">
       <div class="container1">
-        <h2>Sobre Nós</h2>
+        <h2>SOBRE NÓS</h2>
         <p>Conheça nossa equipe de especialistas em segurança da informação</p>
       </div>
     </section>
@@ -49,9 +52,9 @@
             <div class="photo">
               <img src="img/isabelle.jpeg" alt="Foto de Isabelle">
             </div>
-            <h3>Isabelle</h3>
+            <h3 class = "oxygen-regular">ISABELLE</h3>
             <p class="role"><strong>Bióloga e acadêmica de Ciências da Computação</strong></p>          
-            <p>Isabelle é gaúcha de Nova Bassano, bacharel em Ciências Biológicas formada em 2024 e atualmente é estudante do primeiro semestre do curso de Ciência da Computação, pela UPF.</p>
+            <p class = "info">Isabelle é gaúcha de Nova Bassano, bacharel em Ciências Biológicas formada em 2024 e atualmente é estudante do primeiro semestre do curso de Ciência da Computação, pela UPF.</p>
             <div class="social-links">       
               <a href="https://github.com/bellzcto " title="GitHub de Ibelle" aria-label="GitHub de Isabelle"><i class="fab fa-github"></i><img class="icon" src="img/github.png"  alt="imagem" width="50px" height="50px"></a>            
             </div>
@@ -60,9 +63,9 @@
             <div class="photo">
               <img src="img/izadora.jpeg" alt="Foto da Isadora">
             </div>
-            <h3>Izadora</h3>
+            <h3>IZADORA</h3>
             <p class="role"><strong>Estudante de Ciências da Computação</strong></p>
-            <p>Natural de São Pedro do Sul, Izadora é estudante de Ciência da Computação na Universidade de Passo Fundo. Tem interesse em tecnologia, finanças e investimentos, buscando sempre ampliar seus conhecimentos nessas áreas.</p>
+            <p class = "info">Natural de São Pedro do Sul, Izadora é estudante de Ciência da Computação na Universidade de Passo Fundo. Tem interesse em tecnologia, finanças e investimentos, buscando sempre ampliar seus conhecimentos nessas áreas.</p>
             <div class="social-links">
               <a href="https://github.com/izadora0709" title="GitHub de Izadora" aria-label="GitHub de Izadora"><i class="fab fa-github"></i><img class="icon" src="img/github.png"  alt="imagem" width="50px" height="50px"></a>
             </div>
@@ -73,9 +76,9 @@
                 <img src="img/lais.jpeg" alt="Laís">
               </div>
             </div>
-            <h3>Laís Fátima Siqueira</h3>          
+            <h3>LAÍS FÁTIMA SIQUEIRA</h3>          
             <p class="role"><strong>Bióloga e Estudante de Ciências da Computação</strong></p>
-            <p>Laís é gaúcha de Passo Fundo, formada em Ciências Biológicas há 15 anos e atualmente está cursando o primeiro semestre de Ciências da Computação, pela Universidades de Passo Fundo.</p>
+            <p class = "info">Laís é gaúcha de Passo Fundo, formada em Ciências Biológicas há 15 anos e atualmente está cursando o primeiro semestre de Ciências da Computação, pela Universidades de Passo Fundo.</p>
               <div class="social-links">
                 <a href="https://github.com/laisfsiqueira" title="GitHub de Laís" aria-label="GitHub de Laís"><i class="fab fa-github"></i><img class="icon" src="img/github.png"  alt="imagem" width="50px" height="50px"></a>
             </div>
@@ -84,11 +87,12 @@
       </div>  
     </section>
   </main>
-  <script src="javascript/script.js"></script>
+  
   <footer>
     <div class="container-footer">
       <p>&copy; 2025 - Todos os direitos reservados</p>
     </div>
   </footer>
+  <script src="javascript/sobre.js"></script>
 </body>
 </html>
